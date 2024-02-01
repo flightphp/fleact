@@ -1,0 +1,125 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "ignore": [
+      "node_modules",
+      "vendor"
+    ],
+    "ignoreUnknown": true,
+    "include": [],
+    "maxSize": 1048576
+  },
+  "javascript": {
+    "jsxRuntime": "transparent",
+    "organizeImports": {},
+    "globals": [
+      "JSX",
+      "React",
+      "isDevelopment",
+      "LiveReloadChangeEvent"
+    ],
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": false
+    },
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "asNeeded",
+      "trailingComma": "none",
+      "arrowParentheses": "asNeeded",
+      "bracketSameLine": true,
+      "bracketSpacing": true,
+      "enabled": true,
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "jsxQuoteStyle": "single",
+      "lineEnding": "lf",
+      "lineWidth": 80,
+      "quoteProperties": "asNeeded",
+      "attributePosition": "auto"
+    }
+  },
+  "formatter": {
+    "lineWidth": 80,
+    "enabled": true,
+    "formatWithErrors": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "ignore": [],
+    "include": [],
+    "attributePosition": "auto"
+  },
+  "linter": {
+    "rules": {
+      "a11y": {
+        "all": true
+      },
+      "all": true,
+      "complexity": {
+        "all": true
+      },
+      "correctness": {
+        "all": true
+      },
+      "nursery": {
+        "all": true,
+        "noReactSpecificProps": "off"
+      },
+      "performance": {
+        "all": true
+      },
+      "security": {
+        "all": true
+      },
+      "style": {
+        "all": true,
+        "noDefaultExport": "off"
+      },
+      "suspicious": {
+        "all": true
+      }
+    },
+    "enabled": true
+  },
+  "json": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineEnding": "lf",
+      "lineWidth": 80,
+      "trailingCommas": "none"
+    },
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": true
+    }
+  },
+  "organizeImports": {
+    "enabled": true,
+    "ignore": [],
+    "include": []
+  },
+  "vcs": {
+    "clientKind": "git",
+    "enabled": false,
+    "useIgnoreFile": true,
+    "defaultBranch": "",
+    "root": ""
+  },
+  "css": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineEnding": "lf",
+      "lineWidth": 80,
+      "quoteStyle": "single"
+    },
+    "parser": {
+      "allowWrongLineComments": false
+    }
+  },
+  "extends": [],
+  "overrides": []
+}

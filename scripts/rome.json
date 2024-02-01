@@ -1,0 +1,43 @@
+{
+  "$schema": "./node_modules/rome/configuration_schema.json",
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "ignore": [
+      "node_modules"
+    ],
+    "indentSize": 2,
+    "indentStyle": "space",
+    "lineWidth": 90
+  },
+  "javascript": {
+    "formatter": {
+      "quoteProperties": "asNeeded",
+      "quoteStyle": "single",
+      "semicolons": "asNeeded",
+      "trailingComma": "none"
+    },
+    "globals": [
+      "isDevelopment",
+      "LiveReloadChangeEvent"
+    ]
+  },
+  "linter": {
+    "enabled": true,
+    "ignore": [
+      "node_modules"
+    ],
+    "rules": {
+      "all": true,
+      "nursery": {
+        "all": true
+      }
+    }
+  },
+  "organizeImports": {
+    "enabled": false,
+    "ignore": [
+      "node_modules"
+    ]
+  }
+}

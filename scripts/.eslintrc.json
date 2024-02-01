@@ -1,0 +1,62 @@
+{
+  "env": { "browser": true },
+  "extends": ["eslint:all", "plugin:@typescript-eslint/all", "plugin:react/all", "plugin:react/jsx-runtime"],
+  "parserOptions": { "sourceType": "module", "ecmaVersion": 2015, "project": "./tsconfig.json" },
+  "rules": {
+    /*==============================
+    =            ESLINT            =
+    ==============================*/
+    "array-element-newline": ["warn", "consistent"],
+    "capitalized-comments": "off",
+    "consistent-return": ["warn", { "treatUndefinedAsUnspecified": false }],
+    "func-style": ["warn", "declaration", { "allowArrowFunctions": true }],
+    "function-call-argument-newline": ["warn", "consistent"],
+    "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "jsx-quotes": ["warn", "prefer-single"],
+    "max-len": ["warn", { "code": 90, "tabWidth": 2 }],
+    "max-statements": ["warn", 15, { "ignoreTopLevelFunctions": true }],
+    "multiline-comment-style": ["off", "bare-block"],
+    "newline-per-chained-call": ["off", { "ignoreChainWithDepth": 3 }],
+    "no-console": "warn",
+    "no-magic-numbers": "off",
+    "no-tabs": ["warn", { "allowIndentationTabs": false }],
+    "object-curly-spacing": ["warn", "always"],
+    "one-var": "off",
+    "padded-blocks": ["warn", "never"],
+    "quotes": ["warn", "single", { "avoidEscape": true }],
+    "semi": ["warn", "never"],
+    "sort-imports": "off",
+    "space-before-function-paren": ["warn", "never"],
+    /*=============================
+    =            REACT            =
+    =============================*/
+    "react/jsx-indent": ["warn", 2, { "checkAttributes": true, "indentLogicalExpressions": true }],
+    "react/jsx-indent-props": ["warn", { "indentMode": 2, "ignoreTernaryOperator": true }],
+    "react/jsx-max-depth": ["warn", { "max": 3 }],
+    "react/jsx-max-props-per-line": ["warn", { "maximum": { "single": 4, "multi": 1 } }],
+    "react/jsx-newline": ["warn", { "prevent": true, "allowMultilines": false }],
+    "react/jsx-no-bind": ["warn", { "allowArrowFunctions": true, "allowFunctions": true }],
+    "react/jsx-no-literals": "off",
+    "react/jsx-one-expression-per-line": ["off", { "allow": "single-child" }],
+    "react/jsx-filename-extension": ["warn", { "allow": "as-needed", "extensions": [".jsx", ".tsx"] }],
+    /*==================================
+    =            TYPESCRIPT            =
+    ==================================*/
+    "@typescript-eslint/object-curly-spacing": ["warn", "always"],
+    "@typescript-eslint/quotes": ["warn", "single", { "avoidEscape": true }],
+    "@typescript-eslint/semi": ["warn", "never"],
+    "@typescript-eslint/indent": ["warn", 2, { "SwitchCase": 1 }],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/space-before-function-paren": ["warn", "never"],
+    "@typescript-eslint/no-magic-numbers": "off",
+    "@typescript-eslint/prefer-readonly-parameter-types": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/member-delimiter-style": ["warn", { "multiline": { "delimiter": "none" } }]
+  },
+  "settings": { "react": { "version": "detect" } },
+  "ignorePatterns": ["src/**/*.css"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "react"]
+}

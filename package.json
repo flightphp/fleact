@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "start php -S localhost:8000 & node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "setup:linters": "node scripts/setup-linters.mjs",
+    "setup:rome": "node scripts/setup-rome.mjs"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "esbuild": "0.21.5",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "wouter": "^3.3.5"
+  }
+}
