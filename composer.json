@@ -35,7 +35,12 @@
       "main.js",
       "*.jsx",
       "*.tsx",
-      "*.map"
+      "*.map",
+      ".env.dist",
+      "globals.d.ts",
+      "tsconfig.json",
+      "env.d.ts",
+      "*.module.css"
     ]
   }
 }
