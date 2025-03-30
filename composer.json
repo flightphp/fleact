@@ -4,8 +4,8 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "flightphp/core": "^3.13",
-    "php": ">=7.4"
+    "php": ">=7.4",
+    "flightphp/core": "^3.15"
   },
   "scripts": {
     "build": [
@@ -42,5 +42,8 @@
       "env.d.ts",
       "*.module.css"
     ]
+  },
+  "config": {
+    "sort-packages": true
   }
 }
